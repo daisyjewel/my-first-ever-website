@@ -1,20 +1,147 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
-<style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #f2e0d2; 
-            height: 100vh;
-        }
-    </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  <title>Navbar Elegan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <body>
-        <div class="container-judul" style="width: 100%;">
-        <h1 style="color: #1a1a1a; margin-top: 5px; margin-left: 40px; font-family: 'Plus Jakarta Sans', sans serif; font-weight: 800; font-size: 15px; letter-spacing: 0.5px;">
-            fifin<span style="color: #f2afbc;">.</span>isna
-        </h1>
-        <hr style="margin-top: 10px; border: none; border-top: 1px solid #f2afbc; width; 100%;">
-        </div>
-    </body>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #fce5ee; 
+      color: #333;
+    }
+    
+    /* Navbar Styles */
+    .navbar {
+      width: 100%;
+      padding: 24px 0;
+      border-bottom: 1px solid #c29ce4;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+    }
+        
+    .logo {
+      font-size: 24px;
+      font weight: 700;
+      color: #222222;
+      letter-spacing: -0.5px;
+    }
+
+    .logo span {
+      color: #9a7fcb;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #8e7aa7;
+      margin-left: 32px;
+      font-weight: 500;
+      font-size: 16px;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: #6a538a;
+    }
+    
+    
+    .hero-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 40px;
+    }
+
+    .command-container {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .terminal-badge {
+      background-color: #f3e8ff;
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 15px;
+    }
+
+    .dot{
+      width: 10px;
+      height: 10px;
+      background-color: #4ade80;
+      border-radius: 50%;
+      margin-right: 12px;
+    }
+
+    .command-text {
+      color: #c084fc;
+      font-weight: 500;
+    }
+
+    .cursor {
+      color: #c084fc;
+      margin-left: 4px;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    @media (max width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        gap: 16px;
+      }
+      .nav-links a {
+        margin: 0 12px;
+      }
+    }
+  </style>
+  </head>
+<body>
+  
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        fifin<span>.</span>isna
+      </div>
+      <nav class="nav-links">
+        <a href="work">Work</a>
+        <a href="skills">Skills</a>
+        <a href="about">About</a>
+        <a href="contact"></a>
+        <a href="hire me">Hire Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero-section">
+    <div class="command-container">
+      <div class="terminal-badge">
+        <span class="dot"></span>
+        <span class="command-text">Welcome to Isna's Perspective"
+        <span class="cursor">|</span>
+      </div>
+    </div>
+  </main>
+ 
+</body>
+</html>
