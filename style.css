@@ -467,7 +467,13 @@ body {
   flex-direction: column;
   overflow: hidden;
   border-radius: 4px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.03);
 }
+
+.image-wrapper {
+      position: relative;
+      width: 100%;
+    }
 
 .image-wrapper img {
   width: 100%;
