@@ -66,8 +66,7 @@
     </div>
   </main>
 
-    <section class="about-section">
-    <!-- Badge Atas -->
+    <section id="about" class="about-section">
     <div class="badge">
       <!-- Ikon Sparkle SVG -->
       <svg class="badge-icon" viewBox="0 0 24 24">
@@ -111,6 +110,7 @@
 </p>
 
     </div>
+    </div>
 
 </section>
 
@@ -146,7 +146,6 @@
   <section id="work" class="magazine-grid">
     <article class="card hero-card">
       <div class="image-wrapper">
-        <span class="badge">ARTICLE</span>
         <img src="https://picsum.photos/800/500?random=1" alt="Gambar Artikel Utama">
         <div class="hero-overlay">
           <span class="category">DESIGN</span>
@@ -166,7 +165,6 @@
 
   <article class="card side-card">
       <div class="image-wrapper">
-        <span class="badge badge-red">● VIDEO</span>
         <img src="https://picsum.photos/500/300?random=2" alt="Gambar Samping">
       </div>
       <div class="card-content">
@@ -184,7 +182,6 @@
 
  <article class="card triple-card">
       <div class="image-wrapper">
-        <span class="badge">PODCAST</span>
         <img src="https://picsum.photos/400/250?random=3" alt="Gambar Kartu 1">
       </div>
       <div class="card-content">
@@ -199,7 +196,6 @@
 
 <article class="card triple-card">
       <div class="image-wrapper">
-        <span class="badge">ARTICLE</span>
         <img src="https://picsum.photos/400/250?random=4" alt="Gambar Kartu 2">
       </div>
       <div class="card-content">
@@ -214,7 +210,6 @@
 
 <article class="card triple-card">
       <div class="image-wrapper">
-        <span class="badge">ARTICLE</span>
         <img src="https://picsum.photos/400/250?random=5" alt="Gambar Kartu 3">
       </div>
       <div class="card-content">
@@ -226,6 +221,7 @@
         </div>
       </div>
     </article>
+  </section>
 
 <section id="contact" class="contact-section">
   <div class="contact-container">
@@ -245,14 +241,18 @@
         "Available for content writing, storytelling, and creative editorial projects. Open to full-time positions and project-based work."
       </p>
 
-      <a href="fifin.isna@gmail.com" class="contact-email">
+      <a href="mailto:fifin.isna@gmail.com" class="contact-email">
         fifin.isna@gmail.com
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
       </a>
       </div>
 
       <div class="contact-card">
-        <form-class="contact-form" onsubmit="event.preventDefault();">
+        <form class="contact-form" onsubmit="event.preventDefault();">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Muhammad Bejo" required>
+          </div>
 
       <div class="form-group">
         <label for="name">Your Name</label>
@@ -266,7 +266,7 @@
 
       <div class="form-group">
         <label for="Message">Message</label>
-        <textarea for="Message" rows="4" id="Message" placeholder="Tell me about the role or project..."></textarea>
+        <textarea rows="4" id="Message" placeholder="Tell me about the role or project..."></textarea>
       </div>
 
       <button type="submit" class="btn-send">

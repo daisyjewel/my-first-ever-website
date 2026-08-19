@@ -6,7 +6,7 @@
     }
 
     body {
-      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
       background-color: #fce5ee; 
       color: #333;
       line-height: 1.4;
@@ -97,7 +97,7 @@
     .hero-container {
       max-width: 1300px;
       margin: 0 auto;
-      padding: 100px 40px 60px 40px;
+      padding: 120px 40px 60px 40px;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -105,7 +105,7 @@
     }
 
     .status-wrapper {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
 
     .terminal-badge {
@@ -122,7 +122,7 @@
       max-width: 100%;
     }
 
-    .dot{
+    .dot {
       width: 8px;
       height: 8px;
       background-color: #2dd4bf;
@@ -146,8 +146,8 @@
     }
 
     @keyframes typing {
-      from {width: 0; }
-      to {width: 100%; }
+      from { width: 0; }
+      to { width: 100%; }
     }
 
     @keyframes blink {
@@ -228,34 +228,10 @@
       background-color: rgba(255, 255, 255, 0.9);
       }
 
-      @keyframes blink {
-      50% { opacity: 0; }
-      }
-
-      .section-tag {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-family: system-ui, -apple-system, sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: #9d8ec2
-}
-
-.section-tag svg {
-    width: 18px;
-    height: 18px;
-    fill: none;
-    stroke: #8b5cf6;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
-
-body {
-    background-color: #fce5ee;
+      .about-section {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 80px 50px;
 }
 
 .badge {
@@ -280,14 +256,7 @@ body {
       stroke-linejoin: round;
     }
 
-
-.about-section {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 80px 50px;
-}
-
-.about-container {
+  .about-container {
     display: flex;
     gap: 60px;
     align-items: center;
@@ -301,12 +270,12 @@ body {
     width: 100%;
     height: 520px;
     object-fit: cover;
-    border-radius: 24 px;
+    border-radius: 24px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
 }
 
 .about-content {
-    display: grid;
+    display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: center;
@@ -322,7 +291,6 @@ body {
 }
 
 .about-text {
-    font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 17px;
     line-height: 1.6;
     color: #8e8594;
@@ -330,40 +298,20 @@ body {
     text-align: justify;
 }
 
-.about-highlights {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin-top: 10px;
+.section-tag svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: #8b5cf6;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
-
-.highlight-item {
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 1px solid #fdcadf;
-    padding: 10px 18px;
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #7b4db5;
-    align-items: center;
-    gap: 8px;
-}
-
-* {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      color: #2D2727;
-      padding: 60px 20px;
-    }
 
 .skills-container {
-      max-width: 680px; /* Ukuran pas untuk 1 kotak di tengah */
+      max-width: 1300px;
       margin: 0 auto;
+      padding: 0 50px;
     }
 
 .section-badge {
@@ -413,15 +361,8 @@ body {
       font-size: 26px;
       font-weight: 800;
       color: #1F1926;
-      margin-bottom: 14px;
+      margin-bottom: 20px;
       line-height: 1.25;
-    }
-
- .card-description {
-      font-size: 15px;
-      color: #796E8A;
-      line-height: 1.6;
-      margin-bottom: 28px;
     }
 
 .skills-pills {
@@ -440,24 +381,13 @@ body {
       border: 1px solid #E8DEFD;
     }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  color: #1a1a1a;
-  padding-bottom: 60px;
-}
 
 .magazine-grid {
   display: grid;
   grid-template-columns: repeat(6,1fr);
   gap: 24px;
   max-width: 1300px;
-  margin: 30px auto;
+  margin: 60px auto;
   padding: 0 20px;
 }
  
@@ -466,7 +396,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.03);
 }
 
@@ -482,37 +412,14 @@ body {
   display: block;
 }
 
-.badge {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  background: rgba(0, 0, 0, 0.85);
-  color: white;
-  font-size: 0.7rem;
-  padding: 4px 8px;
-  letter-spacing: 1px;
-  z-index: 2;
-}
+.hero-card { grid-column: span 4; }
+    .side-card { grid-column: span 2; }
+    .triple-card { grid-column: span 2; }
 
-.badge-red {
-  background: #d9381e;
-}
+    .hero-card .image-wrapper { height: 320px; }
+    .side-card .image-wrapper { height: 200px; }
+    .triple-card .image-wrapper { height: 180px; }
 
-.hero-card {
-  grid-column: span 4;
-}
-
-.side-card {
-  grid-column: span 2;
-}
-
-.triple-card {
-  grid-column: span 2; /* Makan 2 kolom */
-}
-
-.hero-card .image-wrapper {
-  height: 320px;
-}
 
 .hero-overlay {
   position: absolute;
@@ -541,8 +448,9 @@ body {
   text-transform: uppercase;
   margin-bottom: 8px;
   display: block;
+}
 
-h3 {
+.card-content h3 {
   font-size: 1.2rem;
   line-height: 1.3;
   margin-bottom: 12px;
@@ -653,7 +561,7 @@ h3 {
   flex: 1;
   max-width: 520px;
   background: #fff8fb; /* Kartu putih bernuansa pink sangat soft */
-  padding: 20px;
+  padding: 30px;
   border-radius: 28px;
   box-shadow: 0 20px 40px rgba(181, 141, 254, 0.08);
   border: 1px solid #fae1ec;
@@ -668,13 +576,11 @@ h3 {
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 
 
 .form-group label {
-  display: block;
-  margin-top: 16px;
   font-size: 12px;
   font-weight: 700;
   color: #8e8594;
@@ -724,7 +630,7 @@ h3 {
   font-weight: 600;
   cursor: pointer;
   box-shadow: 0 10px 20px rgba(181, 141, 254, 0.3);
-  transition: transform 0.2s ease, backgroundcolor 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.2s ease;
   margin-top: 10px;
 }
 
@@ -805,11 +711,6 @@ h3 {
         display: flex;
       }
 
-      .nav-links {
-        flex-direction: column;
-        gap: 15px;
-      }
-
       .nav-links a {
         padding: 8px 0;
         font-size: 16px;
@@ -862,6 +763,10 @@ h3 {
         flex-direction: column;
         gap: 30px;
     }
+
+    .about-image-wrapper {
+    width: 100%;
+  }
  
     .about-image {
         height: 380px;
@@ -884,7 +789,6 @@ h3 {
       .card-description {
         font-size: 14px;
       }
-    }
 
   .magazine-grid {
   grid-template-columns: 1fr;
@@ -912,6 +816,7 @@ h3 {
 .contact-card {
     padding: 24px;
   }
+
 }
 
 
